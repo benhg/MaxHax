@@ -22,12 +22,12 @@ public class GameScreen extends MaxHaxScreen {
 	}
 	
 	public void show(){
-		map=new TmxMapLoader().load("/Users/csstudent/Desktop/MaxHax 2 lol real tho/data/MaxHaxLevel1.tmx");
+		map=new TmxMapLoader().load("/Users/csstudent/Desktop/MaxHax-master/data/MaxHaxLevel1.tmx");
 		renderer=new OurRenderer(map,32);
 		cam=new OrthographicCamera();
 		cam.setToOrtho(false,800,600);
 		renderer.setView(cam);
-		renderer.render(new int[]{0,1});
+		renderer.render();
 		
 		
 	}

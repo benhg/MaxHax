@@ -20,7 +20,7 @@ public class IntroMenu extends MaxHaxScreen {
 
 	@Override
 	public void show () {
-		FileHandle fh = Gdx.files.absolute("/Users/csstudent/Desktop/MaxHax 2 lol real tho/core/src/lol.png");
+		FileHandle fh = Gdx.files.absolute("/Users/csstudent/Desktop/MaxHax-master/core/src/unnamed.png");
 		Texture t = new Texture(fh);
 		intro = new TextureRegion(t, 0, 0, 800, 600);
 		batch = new SpriteBatch();

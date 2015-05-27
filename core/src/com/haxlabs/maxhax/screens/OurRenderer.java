@@ -27,10 +27,7 @@ public class OurRenderer extends OrthogonalTiledMapRenderer {
 		
 	}
 	public void render(){
-		imageBounds.x=800;
-		imageBounds.y=600;
-		imageBounds.width=800;
-		imageBounds.height=600;
+		
 		super.render();
 		
 	}

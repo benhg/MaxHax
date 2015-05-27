@@ -20,17 +20,17 @@ public class MainMenu extends MaxHaxScreen {
 
 	
 	public void show() {
-		title = new TextureRegion(new Texture(Gdx.files.internal("/Users/csstudent/Desktop/MaxHax 2 lol real tho/core/src/unnamed.png")), 0, 0, 800, 600);
-		batch = new SpriteBatch();
-		batch.getProjectionMatrix().setToOrtho2D(0, 0, 800, 600);
+		//title = new TextureRegion(new Texture(Gdx.files.internal("/Users/csstudent/Desktop/MaxHax 2 lol real tho/core/src/unnamed.png")), 0, 0, 800, 600);
+		//batch = new SpriteBatch();
+		//batch.getProjectionMatrix().setToOrtho2D(0, 0, 800, 600);
 	}
 
 
 	public void render(float delta) {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		batch.begin();
-		batch.draw(title, 0, 0);
-		batch.end();
+		//batch.begin();
+		//.draw(title, 0, 0);
+		//batch.end();
 
 		time += delta;
 		if (time > 1) {
@@ -43,7 +43,7 @@ public class MainMenu extends MaxHaxScreen {
 	
 	public void hide() {
 		Gdx.app.debug("MaxHax", "dispose main menu");
-		batch.dispose();
-		title.getTexture().dispose();
+		//batch.dispose();
+		//title.getTexture().dispose();
 	}
 }
