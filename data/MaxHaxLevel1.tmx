@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="Ground " tilewidth="32" tileheight="32">
+  <image source="tiles-forest.png" width="512" height="288"/>
+ </tileset>
+ <tileset firstgid="145" name="Sky" tilewidth="32" tileheight="32">
+  <image source="mapgraphics.png" width="356" height="64"/>
+ </tileset>
+ <tileset firstgid="167" name="Rocks and stuff" tilewidth="32" tileheight="32">
+  <image source="maxhax Tile set/vx-scenery-tileset2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="423" name="images" tilewidth="32" tileheight="32">
+  <image source="images.jpg" width="144" height="90"/>
+ </tileset>
+ <layer name="Sky" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1MEJwDAQA8Hr/2lIv6kgscHHoccMqIIFrapazXs+xl53Cz3u6JFFjyx6ZJlqoccZPbLokUWPLHpkmWqhx5nuHn9d2PNXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwLQXCEfJNA==
+  </data>
+ </layer>
+ <layer name="Ground" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0zEKg0AQBdDxDomVKZOrpxKvqAtZsBiNgtvIe/CxkV/MZyMA4Lx+yatB76Nh9519u4h35Hfrkwwb/66VLUrnuNNNru6R3W36fct9n3Fsn7rFeg+bHJfduFX473Nh6lsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICrzRhBDKQ=
+  </data>
+ </layer>
+</map>
