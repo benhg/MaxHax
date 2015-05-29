@@ -23,11 +23,10 @@ public class GameScreen extends MaxHaxScreen {
 	
 	public void show(){
 		map=new TmxMapLoader().load("/Users/csstudent/Desktop/MaxHax-master/data/MaxHaxLevel1.tmx");
-		renderer=new OurRenderer(map,32);
+		renderer=new OurRenderer(map);
 		cam=new OrthographicCamera();
-		cam.setToOrtho(false,800,600);
-		renderer.setView(cam);
-		renderer.render();
+		cam.setToOrtho(true,800,600);
+		
 		
 		
 	}
@@ -38,6 +37,7 @@ public class GameScreen extends MaxHaxScreen {
 		
 		Gdx.gl.glClearColor(0.1f,0.1f,0.1f,1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT); 
+		cam.setToOrtho(false,820,490);
 		renderer.setView(cam);
 		renderer.render();
 
