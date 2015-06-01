@@ -1,5 +1,6 @@
 package com.haxlabs.maxhax.screens;
 
+<<<<<<< HEAD
 import java.io.File;
 
 import com.badlogic.gdx.Gdx;
@@ -12,13 +13,25 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.haxlabs.maxhax.Max;
+=======
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+>>>>>>> 245484bb1067646b6671d83254e784bfda233846
 
 public class OurRenderer extends OrthogonalTiledMapRenderer {
 		private TextureRegion maxt;
 
 	public OurRenderer(TiledMap map) {
 		super(map);
+<<<<<<< HEAD
 		Texture max=new Texture(Gdx.files.internal("data/max.png"));
+=======
+		Texture max=new Texture(Gdx.files.absolute("/Users/csstudent/Desktop/MaxHax-master/data/max.png"));
+>>>>>>> 245484bb1067646b6671d83254e784bfda233846
 		TextureRegion maxt=new TextureRegion(max);
 		this.maxt=maxt;
 		// TODO Auto-generated constructor stub
@@ -48,6 +61,7 @@ public class OurRenderer extends OrthogonalTiledMapRenderer {
 		renderMax();
 	}
 	public void renderMax(){
+<<<<<<< HEAD
 		FileHandle fh = Gdx.files.internal("data/max.png");
 		Texture t = new Texture(fh);
 		TextureRegion g = new TextureRegion(t, 0, 0, 50, 50);
@@ -113,4 +127,10 @@ public class OurRenderer extends OrthogonalTiledMapRenderer {
 		batch.draw(anim.getKeyFrame(map.bob.stateTime, loop), map.bob.pos.x, map.bob.pos.y, 1, 1);
 	*/}
 	
+=======
+		batch.begin();
+		batch.draw(maxt, 400, 200);
+		batch.end();
+	}
+>>>>>>> 245484bb1067646b6671d83254e784bfda233846
 }

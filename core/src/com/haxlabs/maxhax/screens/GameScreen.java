@@ -22,7 +22,11 @@ public class GameScreen extends MaxHaxScreen {
 	}
 	
 	public void show(){
+<<<<<<< HEAD
 		map=new TmxMapLoader().load("data/MaxHaxLevel1.tmx");
+=======
+		map=new TmxMapLoader().load("/Users/csstudent/Desktop/MaxHax-master/data/MaxHaxLevel1.tmx");
+>>>>>>> 245484bb1067646b6671d83254e784bfda233846
 		renderer=new OurRenderer(map);
 		cam=new OrthographicCamera();
 		cam.setToOrtho(true,800,600);
