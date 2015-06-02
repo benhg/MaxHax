@@ -1,5 +1,7 @@
-## Java
+## Mac stuff
+.DS_Store
 
+## Java
 *.class
 *.war
 *.ear
