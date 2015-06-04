@@ -1,5 +1,6 @@
 package com.haxlabs.maxhax.screens;
 
+<<<<<<< HEAD
 import java.io.File;
 
 import com.badlogic.gdx.Game;
@@ -30,11 +31,21 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.haxlabs.maxhax.screens.GameOver;
+=======
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 
 
 public class GameScreen extends MaxHaxScreen {
 
 	private TiledMap map;
+<<<<<<< HEAD
 	private OrthogonalTiledMapRenderer renderer;
 	private OrthographicCamera cam;
 	float time = 0;
@@ -49,10 +60,16 @@ public class GameScreen extends MaxHaxScreen {
 	TextureRegion maxT;
 	int x=100;
 	int y=90;
+=======
+	private OurRenderer renderer;
+	private OrthographicCamera cam;
+	float time = 0;
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 	
 	
 	public GameScreen(Game game) {
 		super(game);
+<<<<<<< HEAD
 		cam=new OrthographicCamera();
 		cam.setToOrtho(true,800,600);
 		world=new World(new Vector2(0,-1),true);
@@ -98,10 +115,13 @@ public class GameScreen extends MaxHaxScreen {
 		
 	
 		
+=======
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 		
 	}
 	
 	public void show(){
+<<<<<<< HEAD
 		cam=new OrthographicCamera();
 		cam.setToOrtho(true,800,600);
 		world=new World(new Vector2(0,-10),true);
@@ -109,16 +129,30 @@ public class GameScreen extends MaxHaxScreen {
 		renderer=new OrthogonalTiledMapRenderer(map);
 		body.applyForceToCenter(new Vector2(2,2),true);
 	
+=======
+		map=new TmxMapLoader().load("data/MaxHaxLevel1.tmx");
+		renderer=new OurRenderer(map);
+		cam=new OrthographicCamera();
+		cam.setToOrtho(true,800,600);
+		
+		
+		
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 	}
 
 	@Override
 	public void render(float delta) {
 		delta=Math.min(.06f, Gdx.graphics.getDeltaTime());
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 		Gdx.gl.glClearColor(0.1f,0.1f,0.1f,1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT); 
 		cam.setToOrtho(false,820,490);
 		renderer.setView(cam);
 		renderer.render();
+<<<<<<< HEAD
 		cam=new OrthographicCamera();
 		cam.setToOrtho(true,820,490);
 		Vector2 pos=body.getWorldCenter();
@@ -168,6 +202,8 @@ public class GameScreen extends MaxHaxScreen {
 		
 		
 		
+=======
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 
 	}
 	public void dispose(){
@@ -175,10 +211,13 @@ public class GameScreen extends MaxHaxScreen {
 		renderer.dispose();
 	}
 	
+<<<<<<< HEAD
 	void renderMax(){
 		
 	}
 	
+=======
+>>>>>>> 040fd696a0b6c06aa277fc965b8ea5f8e0740f05
 	public void hide() {
 		Gdx.app.debug("MaxHax", "dispose game screen");
 		renderer.dispose();
