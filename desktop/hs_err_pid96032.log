@@ -1,0 +1,135 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000000000000000, pid=96032, tid=55559
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_40-b27) (build 1.8.0_40-b27)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.40-b25 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# C  0x0000000000000000
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00000001dbcdb508, RBX=0x00000000000161b0, RCX=0x0000000000000000, RDX=0x0000000000000200
+RSP=0x00000001dbf4ca48, RBP=0x00000001dbf4caf0, RSI=0x0000000000000000, RDI=0x00007fe5cc0d4e00
+R8 =0x0000000000000200, R9 =0x00007fe5ca938550, R10=0x00000001dbcf9474, R11=0x00007fe5cc0e8fb0
+R12=0x00007fe5ca938e50, R13=0x00007fe5cc0d4e00, R14=0x00007fe5cac49430, R15=0x0000000000000800
+RIP=0x0000000000000000, EFLAGS=0x0000000000010246, ERR=0x0000000000000014
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00000001dbf4ca48)
+0x00000001dbf4ca48:   00000001dbcad639 00000000002cf2a0
+0x00000001dbf4ca58:   00002060c9c35501 00007fe5cc0dcfb0
+0x00000001dbf4ca68:   00000001da329010 00007fe5cc0dafb0
+0x00000001dbf4ca78:   00000200dbf4cb50 00000001dbf4caa0
+0x00000001dbf4ca88:   0000000000000800 0000000000000200
+0x00000001dbf4ca98:   00007fe5cc0d8fb0 00007fe5cc0d4e00
+0x00000001dbf4caa8:   0000020000000000 00000001dbe54e30
+0x00000001dbf4cab8:   00007fe50000037f 6c5abb05758b5320
+0x00000001dbf4cac8:   00007fe5ca938550 00007fe5ca938e50
+0x00000001dbf4cad8:   0000000000000200 00007fe5cac49430
+0x00000001dbf4cae8:   00000001dbf4ccb8 00000001dbf4cb00
+0x00000001dbf4caf8:   00000001dbcbd2ef 00000001dbf4cb70
+0x00000001dbf4cb08:   00000001dbcf6843 00007fe5cc076fe0
+0x00000001dbf4cb18:   00007fe5cc076e00 00007fe5cac494c0
+0x00000001dbf4cb28:   00000000dbcf815e 00000001dbf4ccc0
+0x00000001dbf4cb38:   00000001dbf4ccb8 0000020000000000
+0x00000001dbf4cb48:   00007fe5cac48b30 00000001dbf4ccb8
+0x00000001dbf4cb58:   00007fe5cc076e00 00007fe5ca93a1b0
+0x00000001dbf4cb68:   0000000000000200 00000001dbf4cbc0
+0x00000001dbf4cb78:   00000001dbcf4451 00007fe5cc076ff8
+0x00000001dbf4cb88:   00000001dbf4ccc0 00000000cc077014
+0x00000001dbf4cb98:   00007fe5cc076e00 00007fe5cac48b30
+0x00000001dbf4cba8:   0000000000000200 00000000ffffffce
+0x00000001dbf4cbb8:   00007fe5ca93a1b0 00000001dbf4cc40
+0x00000001dbf4cbc8:   00000001dbcf2b9d 00007fe5ca93a1b0
+0x00000001dbf4cbd8:   00007fff8226b028 00001fa0dbf4cc20
+0x00000001dbf4cbe8:   00000001dbf4ccb8 00007fe5cc076e00
+0x00000001dbf4cbf8:   00000001dbf4ccc0 00000000cc076fe0
+0x00000001dbf4cc08:   00001fa097d30adf 40e5888000009fe0
+0x00000001dbf4cc18:   0000000000000000 00007fe5ca93a1b0
+0x00000001dbf4cc28:   00007fe5cc076e00 0000000000000000
+0x00000001dbf4cc38:   00000001da3270e0 00000001dbf4cd30 
+
+Instructions: (pc=0x0000000000000000)
+0xffffffffffffffe0:   
+
+Register to memory mapping:
+
+RAX=0x00000001dbcdb508: PlaybackBackend+0x20 in /var/folders/vp/9_5ht09132d37zh2ddryxndc0000gq/T/libgdxcsstudent/f7649394/openal.dylib at 0x00000001dbc92000
+RBX=0x00000000000161b0 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x0000000000000200 is an unknown value
+RSP=0x00000001dbf4ca48 is an unknown value
+RBP=0x00000001dbf4caf0 is an unknown value
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00007fe5cc0d4e00 is an unknown value
+R8 =0x0000000000000200 is an unknown value
+R9 =0x00007fe5ca938550 is an unknown value
+R10=0x00000001dbcf9474: _ZN5AUHAL8AUIOProcEjPK14AudioTimeStampPK15AudioBufferListS2_PS3_S2_Pv+0 in /System/Library/Components/CoreAudio.component/Contents/MacOS/CoreAudio at 0x00000001dbcee000
+R11=0x00007fe5cc0e8fb0 is an unknown value
+R12=0x00007fe5ca938e50 is an unknown value
+R13=0x00007fe5cc0d4e00 is an unknown value
+R14=0x00007fe5cac49430 is an unknown value
+R15=0x0000000000000800 is an unknown value
+
+
+Stack: [0x00000001dbecd000,0x00000001dbf4d000],  sp=0x00000001dbf4ca48,  free space=510k
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fe5ca9037d0] Threads_lock - owner thread: 0x00007fe5cb042800
+
+Heap:
+ PSYoungGen      total 38400K, used 19640K [0x0000000165f80000, 0x0000000168a00000, 0x0000000190a00000)
+  eden space 33280K, 59% used [0x0000000165f80000,0x00000001672ae098,0x0000000168000000)
+  from space 5120K, 0% used [0x0000000168500000,0x0000000168500000,0x0000000168a00000)
+  to   space 5120K, 0% used [0x0000000168000000,0x0000000168000000,0x0000000168500000)
+ ParOldGen       total 87552K, used 0K [0x0000000110a00000, 0x0000000115f80000, 0x0000000165f80000)
+  object space 87552K, 0% used [0x0000000110a00000,0x0000000110a00000,0x0000000115f80000)
+ Metaspace       used 8017K, capacity 8159K, committed 8320K, reserved 1056768K
+  class space    used 795K, capacity 854K, committed 896K, reserved 1048576K
+
+Card table byte_map: [0x0000000190a00000,0x0000000190e01000] byte_map_base: 0x000000019017b000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000100aef7a0
+ Begin Bits: [0x00000001914b8000, 0x00000001934b8000)
+ End Bits:   [0x00000001934b8000, 0x00000001954b8000)
+
+Polling page: 0x00000001012dc000
+
+CodeCache: size=245760Kb used=2685Kb max_used=2685Kb free=243074Kb
+ bounds [0x0000000101372000, 0x0000000101622000, 0x0000000110372000]
+ total_blobs=1151 nmethods=708 adapters=357
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 6.218 Thread 0x00007fe5cc02b000  704       3       java.nio.Bits::int1 (6 bytes)
+Event: 6.219 Thread 0x00007fe5cc02b000 nmethod 704 0x0000000101611a10 code [0x0000000101611b60, 0x0000000101611c90]
+Event: 6.219 Thread 0x00007fe5cc02b000  705       3       java.nio.Bits::int0 (3 bytes)
+Event: 6.219 Thread 0x00007fe5cc02b000 nmethod 705 0x0000000101611710 code [0x0000000101611860, 0x0000000101611990]
+Event: 7.321 Thread 0x00007fe5cc02b000  706       3       sun.awt.AWTAutoShutdown::notifyToolkitThreadBusy (8 bytes)
+Event: 7.321 Thread 0x00007fe5cc02b000 nmethod 706 0x0000000101611310 code [0x0000000101611480, 0x0000000101611648]
+Event: 7.321 Thread 0x00007fe5cc02b000  707       3       sun.awt.AWTAutoShutdown::notifyToolkitThreadFree (8 bytes)
+Event: 7.321 Thread 0x00007fe5cc02b000 nmethod 707 0x0000000101610f10 code [0x0000000101611080, 0x0000000101611248]
+Event: 7.668 Thread 0x00007fe5cc02b000  708       3       java.lang.Object::wait (6 bytes)
+Event: 7.669 Thread 0x00007fe5cc02b000 nmethod 708 0x0000000101610b10 code [0x0000000101610c80, 0x0000000101610e88]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (7 events):
